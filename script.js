@@ -11,17 +11,17 @@ registration= document.querySelector('#registration');
 
 
 
-form.addEventListener('submit',(e)=>{
+form.addEventListener('submit',(e)=>{/*сброс поведения браузера при отправке формы*/
     e.preventDefault()
 });
 
-openForm.addEventListener('click',()=>{
+openForm.addEventListener('click',()=>{/*открытие МО*/
 
     form.style.display="flex";
 
 });
 
-closeForm.addEventListener('click',()=>{
+closeForm.addEventListener('click',()=>{/*зарытие МО*/
     form.style.display="none";
 });
 
@@ -37,10 +37,12 @@ registration.addEventListener('click',()=>{
 
 });
 
-let mailValue= mail.value,
+let mailValue= mail.value,/*переменные с вводимыми в инпуты данными*/
     passwordValue= password.value;
 
-const userData={}
+const userData={} /*объект для хранения информации по пользователям(логин, пароль) */
+
+/*в задании не указанно каким функционалом должен обладать модальное окно, открытие дополнительного окна по клику на кнопку регистрация(логин, пароль + повторение пароля), проверка логина на повтор в userData, добавление нового пользователя (логин, пароль), функционал примерно написан, если нужно добавлю*/
 
 
 
